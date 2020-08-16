@@ -3,13 +3,11 @@
     "name": "startbootstrap-agency",
     "version": "6.0.2",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm install && npm run build && node scripts/start.js",
+        "start": "npm install && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
     "description": "Agency is a one page HTML theme for Bootstrap.",
@@ -47,7 +45,8 @@
         "prettier": "1.19",
         "pug": "3.0.0",
         "sass": "1.26.8",
-        "shelljs": "0.8.4"
+        "shelljs": "0.8.4",
+        "express": "*"
     },
     "engines": {
         "node": "8.10.0"
